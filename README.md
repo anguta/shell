@@ -177,10 +177,6 @@ followed by the redirection symbol followed by a filename. Multiple
 redirection operators or multiple files to the right of the redirection sign
 are errors.
 
-Hint: [popen.c](https://github.com/CSE3320-Spring-2024/Code-Samples/blob/main/popen.c)
-in the Code-Samples repo demonstrates how to do a redirection
-
-
 ### Program Errors
 
 **The one and only error message.** You should print this one and only error
@@ -206,30 +202,4 @@ run the specified program. If there are any program-related errors (e.g.,
 invalid arguments to `ls` when you run it, for example), the shell does not
 have to worry about that (rather, the program will print its own error
 messages and exit).
-
-
-### Miscellaneous Hints
-
-Remember to get the **basic functionality** of your shell working before
-worrying about all of the error conditions and end cases. For example, first
-get a single command running (probably first a command with no arguments, such
-as `ls`). 
-
-Next, add built-in commands. Then, try working on redirection. 
-
-At some point, you should make sure your code is robust to white space of
-various kinds, including spaces (` `) and tabs (`\t`). In general, the user
-should be able to put variable amounts of white space before and after
-commands, arguments, and various operators; however, the 
-redirection operator does not require whitespace.
-
-Check the return codes of all system calls from the very beginning of your
-work. This will often catch errors in how you are invoking these new system
-calls. It's also just good programming sense.
-
-Beat up your own code! You are the best (and in this case, the only) tester of
-this code. Throw lots of different inputs at it and make sure the shell
-behaves well. Good code comes through testing; you must run many different
-tests to make sure things work as desired. Don't be gentle -- other users
-certainly won't be. 
 

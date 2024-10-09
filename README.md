@@ -43,16 +43,6 @@ You can run the provided tests by typing:
 ```
 ## Program Specifications
 
-### Submission
-
-Your code will be submitted by pushing your code to main.  Any other branches
-you have will not be graded.
-
-### Development Environment
-
-You code will be tested on a GitHub codespace.  Code that does not compile
-or run on the provided codespace will result in a grade of 0.
-
 ### Basic Shell: `msh`
 
 Your basic shell, called `msh` is basically an interactive loop: it repeatedly 
